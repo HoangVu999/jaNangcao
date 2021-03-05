@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themedesigner.in/demo/admin-press/main/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Nov 2020 14:19:44 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+</div>
+<div id="main-wrapper">
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <b>
+                        <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                    </b>
+                    <span>
+                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-md-0">
+                    <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                </ul>
+                <ul class="navbar-nav my-lg-0">
+                    <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                        <form class="app-search">
+                            <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar">
+        <div class="scroll-sidebar">
+            <div class="user-profile">
+                <div class="profile-img"> <img src="../assets/images/users/profile.jpg" alt="user" />
+                    <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
+                </div>
+                <div class="profile-text">
+                    <h5>Vũ Đình Hoàng</h5>
+                    <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                    <a href="app-email.html" class="" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                    <a href="pages-login.html" class="" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+                    <div class="dropdown-menu animated flipInY">
+                        <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                        <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                        <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="nav-devider"></li>
+                    <h4 class="nav-small-cap">Danh sách quản lý</h4>
+                    <li>
+                        <a class="" href="categories.html">
+                            <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý danh mục</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="products.html">
+                            <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý sản phẩm</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+        <div class="row page-titles">
+            <div class="col-md-5 align-self-center">
+                <h3 class="text-themecolor">Quản lý danh mục</h3>
+            </div>
+            <div class="col-md-7 align-self-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Danh mục</li>
+                </ol>
+            </div>
+            <div>
+                <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Danh sách danh mục</h4>
+                            <a href="./add-category.html" class="float-right btn btn-primary"><i class="fa fa-plus"></i> Thêm</a>
+                            <div class="table-responsive m-t-40">
+                                <table id="myTable" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên danh mục</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="data_caterory">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+        </footer>
+    </div>
+</div>
+<script src="../assets/plugins/jquery/jquery.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script src="js/waves.js"></script>
+<script src="js/sidebarmenu.js"></script>
+<script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+<script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+        $(document).ready(function() {
+            var table = $('#example').DataTable({
+                "columnDefs": [{
+                    "visible": false,
+                    "targets": 2
+                }],
+                "order": [
+                    [2, 'asc']
+                ],
+                "displayLength": 25,
+                "drawCallback": function(settings) {
+                    var api = this.api();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
+                    var last = null;
+                    api.column(2, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                            last = group;
+                        }
+                    });
+                }
+            });
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+    });
+</script>
+<script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".dataTables_filter").removeAttr("top");
+    });
+</script>
+<script>
+    const API_CATEGORY ='http://localhost:3000/categories';
+    fetch(API_CATEGORY)
+        .then(response => response.json())
+        .then(data => {
+            const result = data.map(category => {
+                return `<tr>
+                            <td>${category.id}</td>
+                            <td>${category.name}</td>
+                            <td>
+                                <a class="btn btn-sm btn-info p-2" href="./edit-category.html?id=${category.id}"><i class="fa fa-edit"></i> Sửa</a>
+                                <button class="btn btn-sm btn-danger p-2" onclick="deleteCategory(${category.id})"><i class="mdi mdi-delete-empty"></i> Xóa</button>
+                            </td>
+                         </tr>`
+            }).join("");
+            document.querySelector('#data_caterory').innerHTML = result;
+        });
+    window.deleteCategory = (id) => {
+        fetch(`${API_CATEGORY}/${id}`, {
+            method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then(response => response.json())
+            .then(data => {
+                window.location.href = './categories.html';
+            });
+    }
+</script>
+</body>
+</html>

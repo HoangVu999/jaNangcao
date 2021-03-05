@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Admin Press</title>
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/bttn.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                        <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                    </b>
+                        <span>
+                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                    </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a>
+                        </li>
+                        <li class="nav-item m-l-10">
+                            <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-sm-down search-box">
+                            <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter">
+                                <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <div class="user-profile">
+                    <div class="profile-img">
+                        <img src="../assets/images/users/profile.jpg" alt="user" />
+                        <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
+                    </div>
+                    <div class="profile-text">
+                        <h5>Vũ Đình Hoàng</h5>
+                        <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                        <a href="app-email.html" class="" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                        <a href="pages-login.html" class="" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+                        <div class="dropdown-menu animated flipInY">
+                            <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                            <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <h4 class="nav-small-cap">Danh sách quản lý</h4>
+                        <li>
+                            <a class="" href="categories.html">
+                                <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý danh mục</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="products.html">
+                                <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý sản phẩm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor">Quản lý sản phẩm</h3>
+                </div>
+                <div class="col-md-7 align-self-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Sản phẩm</li>
+                    </ol>
+                </div>
+                <div>
+                    <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Danh sách bài viêt</h4>
+                                <a href="./add-product.html" class="float-right btn btn-primary"><i class="fa fa-plus"></i> Thêm</a>
+                                <div class="table-responsive m-t-40">
+                                    <table id="myTable" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th width="10%">STT</th>
+                                                <th width="15%">Tên sản phẩm</th>
+                                                <th width="10%">Danh mục</th>
+                                                <th>Ảnh</th>
+                                                <th>Giá</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="data_product">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+            </footer>
+        </div>
+    </div>
+    <script src="./custom_main.js"></script>
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- This is data table -->
+    <script src="../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+            $(document).ready(function() {
+                var table = $('#example').DataTable({
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 2
+                    }],
+                    "order": [
+                        [2, 'asc']
+                    ],
+                    "displayLength": 25,
+                    "drawCallback": function(settings) {
+                        var api = this.api();
+                        var rows = api.rows({
+                            page: 'current'
+                        }).nodes();
+                        var last = null;
+                        api.column(2, {
+                            page: 'current'
+                        }).data().each(function(group, i) {
+                            if (last !== group) {
+                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                last = group;
+                            }
+                        });
+                    }
+                });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function() {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                        table.order([2, 'desc']).draw();
+                    } else {
+                        table.order([2, 'asc']).draw();
+                    }
+                });
+            });
+        });
+        $('#example23').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+    </script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script>
+        const formatter = new Intl.NumberFormat('vi-VN', {
+            style: 'currency',
+            currency: 'VND'
+        });
+        const API_PRODUCT = 'http://localhost:3000/products';
+        fetch(`${API_PRODUCT}/?_expand=category`)
+            .then(response => response.json())
+            .then(data => {
+                const innerHtml = data.map(product => {
+                    return `
+                            <tr>
+                                <td>${product.id}</td>
+                                <td>${product.name}</td>
+                                <td>${product.category.name ?? ''}</td>
+                                <td><img src="${product.image}" alt="Ảnh sản phẩm" width="150px"></td>
+                                <td>${formatter.format(product.price)}</td>
+                                <td>
+                                    <a class="btn btn-sm btn-info p-2" href="edit-product.html?id=${product.id}" ><i class="fa fa-edit"></i> Sửa</a>
+                                    <button class="btn btn-sm btn-danger p-2"  href="" onclick="deleteProduct(${product.id})"><i class="mdi mdi-delete-empty"></i> Xóa</button>
+                                </td>
+                             </tr>
+                            `
+                }).join("");
+                document.querySelector('#data_product').innerHTML = innerHtml;
+            });
+        window.deleteProduct = (id) => {
+            fetch(`${API_PRODUCT}/${id}`, {
+                    method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = './products.html';
+                });
+        }
+    </script>
+</body>
+
+</html>

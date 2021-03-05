@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../assets/images/favicon.png" rel="icon" sizes="16x16" type="image/png">
+    <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+<div id="main-wrapper">
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <b>
+                        <img alt="homepage" class="dark-logo" src="../assets/images/logo-icon.png"/>
+                        <img alt="homepage" class="light-logo" src="../assets/images/logo-light-icon.png"/>
+                    </b>
+                    <span>
+                         <img alt="homepage" class="dark-logo" src="../assets/images/logo-text.png"/>
+                         <img alt="homepage" class="light-logo" src="../assets/images/logo-light-text.png"/>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                           href="javascript:void(0)"><i class="mdi mdi-menu"></i></a>
+                    </li>
+                    <li class="nav-item m-l-10">
+                        <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                           href="javascript:void(0)"><i class="ti-menu"></i></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-lg-0">
+                    <li class="nav-item hidden-sm-down search-box">
+                        <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i
+                                class="ti-search"></i></a>
+                        <form class="app-search">
+                            <input class="form-control" placeholder="Search & enter" type="text">
+                            <a class="srh-btn"><i class="ti-close"></i></a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar">
+        <div class="scroll-sidebar">
+            <div class="user-profile">
+                <div class="profile-img"><img src="../assets/images/users/profile.jpg" alt="user" />
+                    <div class="notify setpos"><span class="heartbit"></span> <span class="point"></span></div>
+                </div>
+                <div class="profile-text">
+                    <h5>Vũ Đình Hoàng</h5>
+                    <a aria-expanded="true" aria-haspopup="true" class="dropdown-toggle u-dropdown" data-toggle="dropdown"
+                       href="#" role="button"><i class="mdi mdi-settings"></i></a>
+                    <a class="" data-toggle="tooltip" href="app-email.html" title="Email"><i class="mdi mdi-gmail"></i></a>
+                    <a class="" data-toggle="tooltip" href="pages-login.html" title="Logout"><i
+                            class="mdi mdi-power"></i></a>
+                    <div class="dropdown-menu animated flipInY">
+                        <a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
+                        <a class="dropdown-item" href="#"><i class="ti-wallet"></i> My Balance</a>
+                        <a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html"><i class="fa fa-power-off"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="nav-devider"></li>
+                    <h4 class="nav-small-cap">Danh sách quản lý</h4>
+                    <li>
+                        <a class="" href="categories.html">
+                            <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý danh mục</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="products.html">
+                            <i class="mdi mdi-note-multiple"></i><span class="hide-menu">Quản lý sản phẩm</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+        <div class="row page-titles">
+            <div class="col-md-7 align-self-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Quản lý sản phẩm</a></li>
+                    <li class="breadcrumb-item active">Sửa sản phẩm</li>
+                </ol>
+            </div>
+            <div>
+                <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10">
+                    <i class="ti-settings text-white"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="edit-form" id="edit-form" novalidate method="post" enctype="multipart/form-data">
+                                <div class="form-row mx-auto">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name">Tên sản phẩm: </label>
+                                        <input type="text" class="form-control" id="name" placeholder="Tên sản phẩm" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <label for="show_cate">Danh mục: </label>
+                                            <select class="custom-select" id="show_cate" required>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="price">Giá: </label>
+                                        <input type="number" class="form-control" id="price" placeholder="Giá sản phẩm..." required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="image">Ảnh sản phẩm: </label>
+                                        <input type="file" class="form-control" id="image" placeholder="Thêm ảnh sản phẩm..." required>
+                                        <img src="" alt="" id="show_image" width="250">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="detail">Chi tiết sản phẩm: </label>
+                                        <textarea type="text" rows="10" class="form-control" id="detail" placeholder="Chi tiết sản phẩm" required></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary mt-4">Thêm mới</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+        </footer>
+    </div>
+</div>
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="js/waves.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('edit-form');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+<script>
+    const API_PRODUCT = 'http://localhost:3000/products';
+    const $ = document.querySelector.bind(document);
+    var url = new URL(document.URL);
+    var id = url.searchParams.get("id");
+    var firebaseConfig = {
+        apiKey: "AIzaSyDv-DWZJPQOTbT6bJdtZJGhCTvcjW3PFSY",
+        authDomain: "testupload-3933e.firebaseapp.com",
+        databaseURL: "https://testupload-3933e.firebaseio.com/",
+        projectId: "testupload-3933e",
+        storageBucket: "testupload-3933e.appspot.com",
+        messagingSenderId: "187472775671",
+        appId: "1:187472775671:web:bf533304ca1a0cd51b06f2",
+        measurementId: "G-M1GDN9W606"
+    };
+    firebase.initializeApp(firebaseConfig);
+    function upload(file) {
+        let storageRef = firebase.storage().ref(`image/${file.name}`);
+        return new Promise((resolve, reject) => {
+            storageRef.put(file).then(function() {
+                storageRef.getDownloadURL()
+                    .then(url => resolve(url))
+                    .catch(error => reject(error))
+            }).catch(error => reject(error));
+        });
+    }
+    var dataProduct = {};
+    const getProduct = () => {
+        return fetch(`${API_PRODUCT}/${id}`)
+            .then(response => response.json())
+            .then(data => {
+                dataProduct = data;
+                $('#name').value = data.name;
+                $('#show_cate').value = data.categoryId;
+                $('#price').value = data.price;
+                $('#show_image').src = data.image;
+                $('#detail').value = data.detail;
+            })
+    }
+    const getCategory = () =>{
+        return fetch('http://localhost:3000/categories')
+            .then(data => data.json())
+            .then(data => {
+            console.log(data);
+            const result = data.map(category => {
+                return `
+                      <option value="${category.id}">${category.name}</option>
+                    `
+            });
+            document.querySelector("#show_cate").innerHTML = result;
+        });
+    }
+    (async function() {
+        await getCategory();
+        await getProduct();
+    })()
+    $('#edit-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const product = {
+            name: $('#name').value,
+            categoryId: $('#show_cate').value,
+            price: $('#price').value,
+            detail: $('#detail').value
+        }
+        let file = $('#image').files[0] ?? null;
+        if (file) {
+            let fileResponse = await upload(file);
+            product.image = fileResponse;
+        }
+        Object.assign(dataProduct, product);
+        await fetch(`${API_PRODUCT}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataProduct)
+        })
+        window.location.href = './products.html';
+    })
+</script>
+</body>
+</html>

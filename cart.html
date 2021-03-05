@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Giá</th>
+        </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Tổng: </td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<script !src="">
+    const products = [
+        {
+            "id": 1,
+            "name": "Iphone X",
+            "quantity": 2,
+            "price": 500
+        },
+        {
+            "id": 2,
+            "name": "Iphone XS",
+            "quantity": 3,
+            "price": 600
+        }
+    ];
+    const result = products.map((product, index)=>{
+        return `
+                <tr>
+                    <td>${index+1}</td>
+                    <td>${product.name}</td>
+                    <td>${product.quantity}</td>
+                    <td>${product.price}</td>
+                </tr>
+                `
+    }).join("");
+    document.querySelector("#data").innerHTML = result;
+
+    const total = products.reduce((accumulator, currentValue) => {
+        return accumulator + (currentValue.price * currentValue.quantity);
+    }, 0);
+    document.querySelector("#total").innerHTML = total;
+</script>
+</body>
+
+</html>
